@@ -10,7 +10,6 @@
       <th>Password</th>
       <th>Ext</th>
       <th>Room no</th>
-      <th>Type</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,7 +22,6 @@
         <td><%= customer.password %></td>
         <td><%= customer.ext %></td>
         <td><%= customer.room_no %></td>
-        <td><%= customer.type %></td>
         <td><%= link_to 'Show', customer %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
         <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>

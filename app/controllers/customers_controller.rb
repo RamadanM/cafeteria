@@ -10,7 +10,7 @@ class CustomersController < ApplicationController
   # GET /customers/1
   # GET /customers/1.json
   def show
-    
+
   end
 
   # GET /customers/new
@@ -70,6 +70,6 @@ class CustomersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def customer_params
-      params.require(:customer).permit(:name, :email, :password, :ext, :room_no, :type)
+      params.require(:customer).permit(:name, :email, :password, :ext, :room_no)
     end
 end
